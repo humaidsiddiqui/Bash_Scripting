@@ -24,4 +24,26 @@ sudo useradd -m $username
 echo "new user added"
 to know where the user is added type this command cat /etc/passwd
 
+arguements in shell:
+the user can enter arguements when writing commands. the address of arguements are 0 1 and 2 
+echo $0 and $1
+
+loops in bash scripting
+#!/bin/activate
+<<cmnt
+this to check voter age
+for election purposes
+cmnt
+
+read -p "Enter your age: " age
+if [[ $age>=18 ]];
+then
+        echo"you can vote"
+else
+        echo"you cannot vote"
+fi
+
+elif condition:
+elif [[$age -ge 18]]
+then    
 
