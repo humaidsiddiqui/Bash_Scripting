@@ -53,7 +53,27 @@ done
 write a script to build folder from start and end arguement command such as loops 1 100 (build driectory from 1 to 100 through CLI arguement)
 
 #!/bin/bash
-for (nums=$1;nums<$2;num++)
+for (nums=$2nums<$3;num++)
 do
     mkdir "day$nums"
 done
+rm -r day* (this will delete all day folders)
+
+while loops
+#!/bin/bash
+
+# Read the limit from the user
+read -p "Enter the limit: " limit
+
+echo "Even numbers:"
+for ((i = 2; i <= limit; i += 2)); do
+    echo "$i"
+done
+
+echo "Odd numbers:"
+for ((i = 1; i <= limit; i += 2)); do
+    echo "$i"
+done
+
+
+
