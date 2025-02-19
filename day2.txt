@@ -9,4 +9,19 @@ comment
 
 Variables: the meaning of VARIable means the value can vary 
 name="humaid"
-echo"my name is $name"
+echo"my name is $name and today's date is $(date)"
+
+taking input from the user
+echo "enter your age"
+read userage
+echo "you entered $userage"
+another way for taking input from user
+read -p "Enter your username" username
+echo "you entered $username"
+
+How to add user to the group
+sudo useradd -m $username
+echo "new user added"
+to know where the user is added type this command cat /etc/passwd
+
+
