@@ -29,21 +29,31 @@ the user can enter arguements when writing commands. the address of arguements a
 echo $0 and $1
 
 loops in bash scripting
-#!/bin/activate
-<<cmnt
-this to check voter age
-for election purposes
-cmnt
-
-read -p "Enter your age: " age
-if [[ $age>=18 ]];
-then
-        echo"you can vote"
+#!/bin/bash
+read -p "enter your age " age
+if [[ $age -ge 18 ]]; then
+        echo "you can vote"
 else
-        echo"you cannot vote"
+        echo "you cannot vote"
 fi
 
 elif condition:
 elif [[$age -ge 18]]
-then    
+then  
 
+loops in bash scripting
+#!/bin/bash
+#this is loop concept
+
+for((num=1;num<=5;num++));
+do
+        mkdir "demo$num"
+done
+
+write a script to build folder from start and end arguement command such as loops 1 100 (build driectory from 1 to 100 through CLI arguement)
+
+#!/bin/bash
+for (nums=$1;nums<$2;num++)
+do
+    mkdir "day$nums"
+done
