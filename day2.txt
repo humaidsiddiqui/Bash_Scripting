@@ -1,0 +1,12 @@
+
+multi line comments starts with << comment(name any word for the comment) end with same word 
+ex: << comment
+this is
+Humaid
+siddiqui
+
+comment
+
+Variables: the meaning of VARIable means the value can vary 
+name="humaid"
+echo"my name is $name"
