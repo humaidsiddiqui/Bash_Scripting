@@ -1,34 +1,35 @@
 
-multi line comments starts with << comment(name any word for the comment) end with same word 
-ex: << comment
-this is
-Humaid
-siddiqui
+# multi line comments starts with << comment(name any word for the comment) end with same word 
+# ex: << comment
+# this is
+# Humaid
+# siddiqui
 
-comment
+# comment
 
-Variables: the meaning of VARIable means the value can vary 
+# Variables: the meaning of VARIable means the value can vary 
 name="humaid"
 echo"my name is $name and today's date is $(date)"
 
-taking input from the user
+# taking input from the user
 echo "enter your age"
 read userage
 echo "you entered $userage"
-another way for taking input from user
+
+# another way for taking input from user
 read -p "Enter your username" username
 echo "you entered $username"
 
-How to add user to the group
+# How to add user to the group
 sudo useradd -m $username
 echo "new user added"
-to know where the user is added type this command cat /etc/passwd
+# to know where the user is added type this command cat /etc/passwd
 
-arguements in shell:
-the user can enter arguements when writing commands. the address of arguements are 0 1 and 2 
-echo $0 and $1
+# arguements in shell:
+# the user can enter arguements when writing commands. the address of arguements are 0 1 and 2 
+# echo $0 and $1
 
-loops in bash scripting
+# loops in bash scripting
 #!/bin/bash
 read -p "enter your age " age
 if [[ $age -ge 18 ]]; then
@@ -41,7 +42,7 @@ elif condition:
 elif [[$age -ge 18]]
 then  
 
-loops in bash scripting
+# loops in bash scripting
 #!/bin/bash
 #this is loop concept
 
@@ -50,7 +51,7 @@ do
         mkdir "demo$num"
 done
 
-write a script to build folder from start and end arguement command such as loops 1 100 (build driectory from 1 to 100 through CLI arguement)
+# write a script to build folder from start and end arguement command such as loops 1 100 (build driectory from 1 to 100 through CLI arguement)
 
 #!/bin/bash
 for (nums=$2nums<$3;num++)
